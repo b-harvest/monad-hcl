@@ -66,6 +66,20 @@ export const cpuData: CPU[] = [
     category: 'server'
   },
   {
+    id: 'epyc-4564p',
+    manufacturer: 'AMD',
+    model: 'EPYC 4564P',
+    baseClock: '4.50 GHz',
+    maxBoostClock: '5.70 GHz',
+    cores: 16,
+    threads: 32,
+    tdp: '170W',
+    numaNodes: 1,
+    avgTemp: '80°C',
+    recommended: true,
+    category: 'server'
+  },
+  {
     id: 'epyc-4585px',
     manufacturer: 'AMD',
     model: 'EPYC 4585PX',
@@ -209,6 +223,21 @@ export const storageData: Storage[] = [
     category: 'enterprise',
     generation: 'gen4',
     notes: 'Has weird random slowdowns under heavy load'
+  },
+  {
+    id: 'kioxia-xg8',
+    manufacturer: 'Kioxia',
+    model: 'KXG80ZNV2T04',
+    interface: 'PCIe 4.0 x4',
+    capacity: '2.05TB',
+    sequentialRead: '7,000 MB/s',
+    sequentialWrite: '5,800 MB/s',
+    randomRead: '900K IOPS',
+    randomWrite: '620K IOPS',
+    recommended: true,
+    category: 'consumer',
+    generation: 'gen4',
+    notes: 'Solid performance. Stable so far. Need to add these parameters to grun "default_ps_max_latency_us=500 blk-mq-nr-hctxs=16"'
   }
 ];
 
