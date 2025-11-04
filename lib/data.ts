@@ -94,20 +94,6 @@ export const cpuData: CPU[] = [
     category: 'server'
   },
   {
-    id: 'epyc-4564p',
-    manufacturer: 'AMD',
-    model: 'EPYC 4564P',
-    baseClock: '4.50 GHz',
-    maxBoostClock: '5.70 GHz',
-    cores: 16,
-    threads: 32,
-    tdp: '170W',
-    numaNodes: 1,
-    avgTemp: '',
-    recommended: true,
-    category: 'server'
-  },
-  {
     id: 'ryzen-7950x',
     manufacturer: 'AMD',
     model: 'Ryzen 9 7950X',
